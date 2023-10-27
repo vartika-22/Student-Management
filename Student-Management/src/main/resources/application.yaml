@@ -1,0 +1,19 @@
+server:
+  port: 9090
+  
+spring:
+  datasource:
+    username: root
+    password: password
+    url: jdbc:mysql://localhost:3306/sms?useSS=false&serverTimezone=UTC&useLegacyDateTimeCode=false
+    
+  jpa:
+     properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+     hibernate:
+      ddl-auto: update #update
+     show-sql: true
+     
+  thymeleaf:
+    check-template-location: false
